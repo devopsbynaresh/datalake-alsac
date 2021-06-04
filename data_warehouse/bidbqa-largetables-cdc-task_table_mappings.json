@@ -1,0 +1,798 @@
+{
+    "rules": [
+        {
+            "rule-type": "transformation",
+            "rule-id": "1",
+            "rule-name": "1",
+            "rule-target": "column",
+            "object-locator": {
+                "schema-name": "DMS",
+                "table-name": "CREDITCARDPAYMENTMETHODDETAIL",
+                "column-name": "EXPIRESON"
+            },
+            "rule-action": "remove-column",
+            "value": null,
+            "old-value": null
+        },
+        {
+            "rule-type": "selection",
+            "rule-id": "2",
+            "rule-name": "2",
+            "object-locator": {
+                "schema-name": "DMS",
+                "table-name": "RECURRINGGIFTINSTALLMENTPAYMENT"
+            },
+            "rule-action": "include",
+            "filters": []
+        },
+        {
+            "rule-type": "selection",
+            "rule-id": "3",
+            "rule-name": "3",
+            "object-locator": {
+                "schema-name": "DMS",
+                "table-name": "PAYMENTORIGINALAMOUNT"
+            },
+            "rule-action": "include",
+            "filters": []
+        },
+        {
+            "rule-type": "transformation",
+            "rule-id": "4",
+            "rule-name": "4",
+            "rule-target": "column",
+            "object-locator": {
+                "schema-name": "MDM",
+                "table-name": "ADDRESS",
+                "column-name": "street_number"
+            },
+            "rule-action": "remove-column",
+            "value": null,
+            "old-value": null
+        },
+        {
+            "rule-type": "transformation",
+            "rule-id": "5",
+            "rule-name": "5",
+            "rule-target": "column",
+            "object-locator": {
+                "schema-name": "DMS",
+                "table-name": "CHECKPAYMENTMETHODDETAIL",
+                "column-name": "CHECKNUMBER"
+            },
+            "rule-action": "remove-column",
+            "value": null,
+            "old-value": null
+        },
+        {
+            "rule-type": "transformation",
+            "rule-id": "6",
+            "rule-name": "6",
+            "rule-target": "column",
+            "object-locator": {
+                "schema-name": "MDM",
+                "table-name": "HOUSEHOLD",
+                "column-name": "name"
+            },
+            "rule-action": "remove-column",
+            "value": null,
+            "old-value": null
+        },
+        {
+            "rule-type": "transformation",
+            "rule-id": "7",
+            "rule-name": "7",
+            "rule-target": "column",
+            "object-locator": {
+                "schema-name": "MDM",
+                "table-name": "INDIVIDUAL",
+                "column-name": "relative_to_patient"
+            },
+            "rule-action": "remove-column",
+            "value": null,
+            "old-value": null
+        },
+        {
+            "rule-type": "transformation",
+            "rule-id": "8",
+            "rule-name": "8",
+            "rule-target": "column",
+            "object-locator": {
+                "schema-name": "MDM",
+                "table-name": "INDIVIDUAL",
+                "column-name": "comments"
+            },
+            "rule-action": "remove-column",
+            "value": null,
+            "old-value": null
+        },
+        {
+            "rule-type": "transformation",
+            "rule-id": "9",
+            "rule-name": "9",
+            "rule-target": "column",
+            "object-locator": {
+                "schema-name": "MDM",
+                "table-name": "INDIVIDUAL",
+                "column-name": "birth_month"
+            },
+            "rule-action": "remove-column",
+            "value": null,
+            "old-value": null
+        },
+        {
+            "rule-type": "transformation",
+            "rule-id": "10",
+            "rule-name": "10",
+            "rule-target": "column",
+            "object-locator": {
+                "schema-name": "MDM",
+                "table-name": "INDIVIDUAL",
+                "column-name": "birth_day"
+            },
+            "rule-action": "remove-column",
+            "value": null,
+            "old-value": null
+        },
+        {
+            "rule-type": "transformation",
+            "rule-id": "11",
+            "rule-name": "11",
+            "rule-target": "column",
+            "object-locator": {
+                "schema-name": "MDM",
+                "table-name": "INDIVIDUAL",
+                "column-name": "birth_date"
+            },
+            "rule-action": "remove-column",
+            "value": null,
+            "old-value": null
+        },
+        {
+            "rule-type": "transformation",
+            "rule-id": "12",
+            "rule-name": "12",
+            "rule-target": "column",
+            "object-locator": {
+                "schema-name": "MDM",
+                "table-name": "INDIVIDUAL",
+                "column-name": "age_range"
+            },
+            "rule-action": "remove-column",
+            "value": null,
+            "old-value": null
+        },
+        {
+            "rule-type": "transformation",
+            "rule-id": "13",
+            "rule-name": "13",
+            "rule-target": "column",
+            "object-locator": {
+                "schema-name": "DMS",
+                "table-name": "USR_CREDITCARDPAYMENTMETHODDETAIL",
+                "column-name": "MERCHANTREFERENCECODE"
+            },
+            "rule-action": "remove-column",
+            "value": null,
+            "old-value": null
+        },
+        {
+            "rule-type": "transformation",
+            "rule-id": "14",
+            "rule-name": "14",
+            "rule-target": "column",
+            "object-locator": {
+                "schema-name": "DMS",
+                "table-name": "USR_CREDITCARDPAYMENTMETHODDETAIL",
+                "column-name": "CHARGECARDALIAS"
+            },
+            "rule-action": "remove-column",
+            "value": null,
+            "old-value": null
+        },
+        {
+            "rule-type": "transformation",
+            "rule-id": "15",
+            "rule-name": "15",
+            "rule-target": "column",
+            "object-locator": {
+                "schema-name": "DMS",
+                "table-name": "USR_CREDITCARDPAYMENTMETHODDETAIL",
+                "column-name": "BANKREFERENCECODE"
+            },
+            "rule-action": "remove-column",
+            "value": null,
+            "old-value": null
+        },
+        {
+            "rule-type": "selection",
+            "rule-id": "16",
+            "rule-name": "16",
+            "object-locator": {
+                "schema-name": "MDM",
+                "table-name": "ADDRESS"
+            },
+            "rule-action": "include",
+            "filters": []
+        },
+        {
+            "rule-type": "selection",
+            "rule-id": "17",
+            "rule-name": "17",
+            "object-locator": {
+                "schema-name": "MDM",
+                "table-name": "CONSTITUENT_ADDRESS"
+            },
+            "rule-action": "include",
+            "filters": []
+        },
+        {
+            "rule-type": "selection",
+            "rule-id": "18",
+            "rule-name": "18",
+            "object-locator": {
+                "schema-name": "DMS",
+                "table-name": "CHECKPAYMENTMETHODDETAIL"
+            },
+            "rule-action": "include",
+            "filters": []
+        },
+        {
+            "rule-type": "selection",
+            "rule-id": "19",
+            "rule-name": "19",
+            "object-locator": {
+                "schema-name": "MDM",
+                "table-name": "HOUSEHOLD"
+            },
+            "rule-action": "include",
+            "filters": []
+        },
+        {
+            "rule-type": "selection",
+            "rule-id": "20",
+            "rule-name": "20",
+            "object-locator": {
+                "schema-name": "MDM",
+                "table-name": "INDIVIDUAL"
+            },
+            "rule-action": "include",
+            "filters": []
+        },
+        {
+            "rule-type": "selection",
+            "rule-id": "21",
+            "rule-name": "21",
+            "object-locator": {
+                "schema-name": "DMS",
+                "table-name": "REVENUESPLIT_EXT"
+            },
+            "rule-action": "include",
+            "filters": []
+        },
+        {
+            "rule-type": "selection",
+            "rule-id": "22",
+            "rule-name": "22",
+            "object-locator": {
+                "schema-name": "DMS",
+                "table-name": "FINANCIALTRANSACTION"
+            },
+            "rule-action": "include",
+            "filters": []
+        },
+        {
+            "rule-type": "selection",
+            "rule-id": "23",
+            "rule-name": "23",
+            "object-locator": {
+                "schema-name": "DMS",
+                "table-name": "REVENUE_EXT"
+            },
+            "rule-action": "include",
+            "filters": []
+        },
+        {
+            "rule-type": "selection",
+            "rule-id": "24",
+            "rule-name": "24",
+            "object-locator": {
+                "schema-name": "DMS",
+                "table-name": "USR_CREDITCARDPAYMENTMETHODDETAIL"
+            },
+            "rule-action": "include",
+            "filters": []
+        },
+        {
+            "rule-type": "transformation",
+            "rule-id": "25",
+            "rule-name": "25",
+            "rule-target": "column",
+            "object-locator": {
+                "schema-name": "MDM",
+                "table-name": "INDIVIDUAL",
+                "column-name": "birth_month"
+            },
+            "rule-action": "remove-column",
+            "value": null,
+            "old-value": null
+        },
+        {
+            "rule-type": "transformation",
+            "rule-id": "26",
+            "rule-name": "26",
+            "rule-target": "column",
+            "object-locator": {
+                "schema-name": "MDM",
+                "table-name": "INDIVIDUAL",
+                "column-name": "birth_year"
+            },
+            "rule-action": "remove-column",
+            "value": null,
+            "old-value": null
+        },
+        {
+            "rule-type": "transformation",
+            "rule-id": "27",
+            "rule-name": "27",
+            "rule-target": "column",
+            "object-locator": {
+                "schema-name": "MDM",
+                "table-name": "INDIVIDUAL",
+                "column-name": "deceased"
+            },
+            "rule-action": "remove-column",
+            "value": null,
+            "old-value": null
+        },
+        {
+            "rule-type": "transformation",
+            "rule-id": "28",
+            "rule-name": "28",
+            "rule-target": "column",
+            "object-locator": {
+                "schema-name": "MDM",
+                "table-name": "INDIVIDUAL",
+                "column-name": "deceased"
+            },
+            "rule-action": "remove-column",
+            "value": null,
+            "old-value": null
+        },
+        {
+            "rule-type": "transformation",
+            "rule-id": "29",
+            "rule-name": "29",
+            "rule-target": "column",
+            "object-locator": {
+                "schema-name": "MDM",
+                "table-name": "INDIVIDUAL",
+                "column-name": "deceased_date"
+            },
+            "rule-action": "remove-column",
+            "value": null,
+            "old-value": null
+        },
+        {
+            "rule-type": "transformation",
+            "rule-id": "30",
+            "rule-name": "30",
+            "rule-target": "column",
+            "object-locator": {
+                "schema-name": "MDM",
+                "table-name": "INDIVIDUAL",
+                "column-name": "deceased_day"
+            },
+            "rule-action": "remove-column",
+            "value": null,
+            "old-value": null
+        },
+        {
+            "rule-type": "transformation",
+            "rule-id": "31",
+            "rule-name": "31",
+            "rule-target": "column",
+            "object-locator": {
+                "schema-name": "MDM",
+                "table-name": "INDIVIDUAL",
+                "column-name": "deceased_month"
+            },
+            "rule-action": "remove-column",
+            "value": null,
+            "old-value": null
+        },
+        {
+            "rule-type": "transformation",
+            "rule-id": "32",
+            "rule-name": "32",
+            "rule-target": "column",
+            "object-locator": {
+                "schema-name": "MDM",
+                "table-name": "INDIVIDUAL",
+                "column-name": "deceased_year"
+            },
+            "rule-action": "remove-column",
+            "value": null,
+            "old-value": null
+        },
+        {
+            "rule-type": "transformation",
+            "rule-id": "33",
+            "rule-name": "33",
+            "rule-target": "column",
+            "object-locator": {
+                "schema-name": "MDM",
+                "table-name": "INDIVIDUAL",
+                "column-name": "first_name"
+            },
+            "rule-action": "remove-column",
+            "value": null,
+            "old-value": null
+        },
+        {
+            "rule-type": "transformation",
+            "rule-id": "34",
+            "rule-name": "34",
+            "rule-target": "column",
+            "object-locator": {
+                "schema-name": "MDM",
+                "table-name": "INDIVIDUAL",
+                "column-name": "former_patient"
+            },
+            "rule-action": "remove-column",
+            "value": null,
+            "old-value": null
+        },
+        {
+            "rule-type": "transformation",
+            "rule-id": "35",
+            "rule-name": "35",
+            "rule-target": "column",
+            "object-locator": {
+                "schema-name": "MDM",
+                "table-name": "INDIVIDUAL",
+                "column-name": "gender"
+            },
+            "rule-action": "remove-column",
+            "value": null,
+            "old-value": null
+        },
+        {
+            "rule-type": "transformation",
+            "rule-id": "36",
+            "rule-name": "36",
+            "rule-target": "column",
+            "object-locator": {
+                "schema-name": "MDM",
+                "table-name": "INDIVIDUAL",
+                "column-name": "last_name"
+            },
+            "rule-action": "remove-column",
+            "value": null,
+            "old-value": null
+        },
+        {
+            "rule-type": "transformation",
+            "rule-id": "37",
+            "rule-name": "37",
+            "rule-target": "column",
+            "object-locator": {
+                "schema-name": "MDM",
+                "table-name": "INDIVIDUAL",
+                "column-name": "maiden_name"
+            },
+            "rule-action": "remove-column",
+            "value": null,
+            "old-value": null
+        },
+        {
+            "rule-type": "transformation",
+            "rule-id": "38",
+            "rule-name": "38",
+            "rule-target": "column",
+            "object-locator": {
+                "schema-name": "MDM",
+                "table-name": "INDIVIDUAL",
+                "column-name": "marital_status_id"
+            },
+            "rule-action": "remove-column",
+            "value": null,
+            "old-value": null
+        },
+        {
+            "rule-type": "transformation",
+            "rule-id": "39",
+            "rule-name": "39",
+            "rule-target": "column",
+            "object-locator": {
+                "schema-name": "MDM",
+                "table-name": "INDIVIDUAL",
+                "column-name": "married_date"
+            },
+            "rule-action": "remove-column",
+            "value": null,
+            "old-value": null
+        },
+        {
+            "rule-type": "transformation",
+            "rule-id": "40",
+            "rule-name": "40",
+            "rule-target": "column",
+            "object-locator": {
+                "schema-name": "MDM",
+                "table-name": "INDIVIDUAL",
+                "column-name": "middle_name"
+            },
+            "rule-action": "remove-column",
+            "value": null,
+            "old-value": null
+        },
+        {
+            "rule-type": "transformation",
+            "rule-id": "41",
+            "rule-name": "41",
+            "rule-target": "column",
+            "object-locator": {
+                "schema-name": "MDM",
+                "table-name": "INDIVIDUAL",
+                "column-name": "num_children"
+            },
+            "rule-action": "remove-column",
+            "value": null,
+            "old-value": null
+        },
+        {
+            "rule-type": "transformation",
+            "rule-id": "42",
+            "rule-name": "42",
+            "rule-target": "column",
+            "object-locator": {
+                "schema-name": "MDM",
+                "table-name": "INDIVIDUAL",
+                "column-name": "num_grandchildren"
+            },
+            "rule-action": "remove-column",
+            "value": null,
+            "old-value": null
+        },
+        {
+            "rule-type": "transformation",
+            "rule-id": "43",
+            "rule-name": "43",
+            "rule-target": "column",
+            "object-locator": {
+                "schema-name": "MDM",
+                "table-name": "HOUSEHOLD",
+                "column-name": "custom_name"
+            },
+            "rule-action": "remove-column",
+            "value": null,
+            "old-value": null
+        },
+        {
+            "rule-type": "transformation",
+            "rule-id": "44",
+            "rule-name": "44",
+            "rule-target": "column",
+            "object-locator": {
+                "schema-name": "MDM",
+                "table-name": "HOUSEHOLD",
+                "column-name": "income"
+            },
+            "rule-action": "remove-column",
+            "value": null,
+            "old-value": null
+        },
+        {
+            "rule-type": "transformation",
+            "rule-id": "45",
+            "rule-name": "45",
+            "rule-target": "column",
+            "object-locator": {
+                "schema-name": "MDM",
+                "table-name": "ADDRESS",
+                "column-name": "address"
+            },
+            "rule-action": "remove-column",
+            "value": null,
+            "old-value": null
+        },
+        {
+            "rule-type": "transformation",
+            "rule-id": "46",
+            "rule-name": "46",
+            "rule-target": "column",
+            "object-locator": {
+                "schema-name": "MDM",
+                "table-name": "ADDRESS",
+                "column-name": "apartment_num"
+            },
+            "rule-action": "remove-column",
+            "value": null,
+            "old-value": null
+        },
+        {
+            "rule-type": "transformation",
+            "rule-id": "47",
+            "rule-name": "47",
+            "rule-target": "column",
+            "object-locator": {
+                "schema-name": "MDM",
+                "table-name": "ADDRESS",
+                "column-name": "carrier_route"
+            },
+            "rule-action": "remove-column",
+            "value": null,
+            "old-value": null
+        },
+        {
+            "rule-type": "transformation",
+            "rule-id": "48",
+            "rule-name": "48",
+            "rule-target": "column",
+            "object-locator": {
+                "schema-name": "MDM",
+                "table-name": "ADDRESS",
+                "column-name": "extra_line_1"
+            },
+            "rule-action": "remove-column",
+            "value": null,
+            "old-value": null
+        },
+        {
+            "rule-type": "transformation",
+            "rule-id": "49",
+            "rule-name": "49",
+            "rule-target": "column",
+            "object-locator": {
+                "schema-name": "MDM",
+                "table-name": "ADDRESS",
+                "column-name": "extra_line_2"
+            },
+            "rule-action": "remove-column",
+            "value": null,
+            "old-value": null
+        },
+        {
+            "rule-type": "transformation",
+            "rule-id": "50",
+            "rule-name": "50",
+            "rule-target": "column",
+            "object-locator": {
+                "schema-name": "MDM",
+                "table-name": "ADDRESS",
+                "column-name": "street_name"
+            },
+            "rule-action": "remove-column",
+            "value": null,
+            "old-value": null
+        },
+        {
+            "rule-type": "transformation",
+            "rule-id": "51",
+            "rule-name": "51",
+            "rule-target": "column",
+            "object-locator": {
+                "schema-name": "DMS",
+                "table-name": "USR_CREDITCARDPAYMENTMETHODDETAIL",
+                "column-name": "BANKMERCHANTNOTE"
+            },
+            "rule-action": "remove-column",
+            "value": null,
+            "old-value": null
+        },
+        {
+            "rule-type": "selection",
+            "rule-id": "52",
+            "rule-name": "52",
+            "object-locator": {
+                "schema-name": "GLINTERFACE",
+                "table-name": "JobExecDetailArchive"
+            },
+            "rule-action": "include",
+            "filters": []
+        },
+        {
+            "rule-type": "selection",
+            "rule-id": "53",
+            "rule-name": "53",
+            "object-locator": {
+                "schema-name": "DMS",
+                "table-name": "USR_TRANSACTIONEXT"
+            },
+            "rule-action": "include",
+            "filters": []
+        },
+        {
+            "rule-type": "selection",
+            "rule-id": "54",
+            "rule-name": "54",
+            "object-locator": {
+                "schema-name": "DMS",
+                "table-name": "CREDITCARDPAYMENTMETHODDETAIL"
+            },
+            "rule-action": "include",
+            "filters": []
+        },
+        {
+            "rule-type": "selection",
+            "rule-id": "55",
+            "rule-name": "55",
+            "object-locator": {
+                "schema-name": "DMS",
+                "table-name": "RECURRINGGIFTINSTALLMENT"
+            },
+            "rule-action": "include",
+            "filters": []
+        },
+        {
+            "rule-type": "transformation",
+            "rule-id": "56",
+            "rule-name": "56",
+            "rule-target": "column",
+            "object-locator": {
+                "schema-name": "DMS",
+                "table-name": "CREDITCARDPAYMENTMETHODDETAIL",
+                "column-name": "CREDITCARDPARTIALNUMBER"
+            },
+            "rule-action": "remove-column",
+            "value": null,
+            "old-value": null
+        },
+        {
+            "rule-type": "selection",
+            "rule-id": "57",
+            "rule-name": "57",
+            "object-locator": {
+                "schema-name": "DMS",
+                "table-name": "REVENUESCHEDULE"
+            },
+            "rule-action": "include",
+            "filters": []
+        },
+        {
+            "rule-type": "selection",
+            "rule-id": "58",
+            "rule-name": "58",
+            "object-locator": {
+                "schema-name": "DMS",
+                "table-name": "REVENUEPAYMENTMETHOD"
+            },
+            "rule-action": "include",
+            "filters": []
+        },
+        {
+            "rule-type": "selection",
+            "rule-id": "59",
+            "rule-name": "59",
+            "object-locator": {
+                "schema-name": "DMS",
+                "table-name": "FINANCIALTRANSACTIONLINEITEM"
+            },
+            "rule-action": "include",
+            "filters": []
+        },
+        {
+            "rule-type": "selection",
+            "rule-id": "60",
+            "rule-name": "60",
+            "object-locator": {
+                "schema-name": "DMS",
+                "table-name": "USR_TRANSACTIONEXT"
+            },
+            "rule-action": "include",
+            "filters": []
+        },
+        {
+            "rule-type": "selection",
+            "rule-id": "61",
+            "rule-name": "61",
+            "object-locator": {
+                "schema-name": "MDM",
+                "table-name": "CONSTITUENT_XREF"
+            },
+            "rule-action": "include",
+            "filters": []
+        }
+    ]
+}

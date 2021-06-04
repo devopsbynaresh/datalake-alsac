@@ -1,0 +1,7 @@
+certifi
+chardet
+facebook_business
+idna
+pycountry
+requests
+boto3

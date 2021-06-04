@@ -1,0 +1,481 @@
+{
+  "widgets": [
+    {
+      "type": "metric",
+      "x": 12,
+      "y": 23,
+      "width": 12,
+      "height": 6,
+      "properties": {
+        "metrics": [
+          [
+            "AWS/SNS",
+            "NumberOfNotificationsFailed",
+            "TopicName",
+            "process_lambda_sns_topic"
+          ],
+          ["...", "lambda_sns_topic"]
+        ],
+        "view": "timeSeries",
+        "stacked": false,
+        "region": "us-east-1",
+        "legend": {
+          "position": "bottom"
+        },
+        "period": 3600,
+        "title": "Failed Notifications",
+        "stat": "Sum"
+      }
+    },
+    {
+      "type": "text",
+      "x": 12,
+      "y": 2,
+      "width": 12,
+      "height": 1,
+      "properties": {
+        "markdown": "\n## Billing\n"
+      }
+    },
+    {
+      "type": "text",
+      "x": 0,
+      "y": 0,
+      "width": 24,
+      "height": 2,
+      "properties": {
+        "markdown": "\n# Data lake Monitoring Dashboard\n\nThis dashboard shows high-level metrics that can be used when monitoring and maintaining the data lake. Many of the graphs can be filtered by clicking on the name of a data set in the legend. Dashboard widgets are organized by AWS service.\n"
+      }
+    },
+    {
+      "type": "text",
+      "x": 12,
+      "y": 29,
+      "width": 12,
+      "height": 1,
+      "properties": {
+        "markdown": "\n## Amazon Athena\n"
+      }
+    },
+    {
+      "type": "text",
+      "x": 12,
+      "y": 22,
+      "width": 12,
+      "height": 1,
+      "properties": {
+        "markdown": "\n## Amazon Simple Notification Service (SNS)\n"
+      }
+    },
+    {
+      "type": "text",
+      "x": 12,
+      "y": 9,
+      "width": 12,
+      "height": 1,
+      "properties": {
+        "markdown": "\n## Amazon CloudWatch Events\n"
+      }
+    },
+    {
+      "type": "metric",
+      "x": 0,
+      "y": 3,
+      "width": 12,
+      "height": 6,
+      "properties": {
+        "metrics": [
+          [
+            "AWS/Lambda",
+            "Errors",
+            "FunctionName",
+            "dla_athena_load_partitions"
+          ],
+          ["...", "dla_backup_parameters"],
+          ["...", "dla_data_download_all"],
+          ["...", "dla_data_historical_download_all"],
+          ["...", "dla_gcm_data_extract"],
+          ["...", "dla_gcm_data_monitor"],
+          ["...", "dla_s3_access_reporting"]
+        ],
+        "view": "timeSeries",
+        "stacked": false,
+        "region": "us-east-1",
+        "title": "Lambda Function Errors",
+        "period": 3600,
+        "stat": "Sum"
+      }
+    },
+    {
+      "type": "text",
+      "x": 0,
+      "y": 2,
+      "width": 12,
+      "height": 1,
+      "properties": {
+        "markdown": "\n## AWS Lambda\n"
+      }
+    },
+    {
+      "type": "metric",
+      "x": 0,
+      "y": 9,
+      "width": 12,
+      "height": 6,
+      "properties": {
+        "metrics": [
+          [
+            "AWS/Lambda",
+            "Duration",
+            "FunctionName",
+            "dla_athena_load_partitions"
+          ],
+          ["...", "dla_backup_parameters"],
+          ["...", "dla_data_download_all"],
+          ["...", "dla_data_historical_download_all"],
+          ["...", "dla_gcm_data_extract"],
+          ["...", "dla_gcm_data_monitor"],
+          ["...", "dla_s3_access_reporting"]
+        ],
+        "view": "timeSeries",
+        "stacked": false,
+        "region": "us-east-1",
+        "title": "Lambda Function Duration",
+        "period": 300,
+        "stat": "Average"
+      }
+    },
+    {
+      "type": "metric",
+      "x": 0,
+      "y": 15,
+      "width": 12,
+      "height": 6,
+      "properties": {
+        "metrics": [
+          [
+            "AWS/Lambda",
+            "Invocations",
+            "FunctionName",
+            "dla_athena_load_partitions"
+          ],
+          ["...", "dla_backup_parameters"],
+          ["...", "dla_data_download_all"],
+          ["...", "dla_data_historical_download_all"],
+          ["...", "dla_gcm_data_extract"],
+          ["...", "dla_gcm_data_monitor"],
+          ["...", "dla_s3_access_reporting"]
+        ],
+        "view": "timeSeries",
+        "stacked": false,
+        "region": "us-east-1",
+        "title": "Lambda Function Invocations",
+        "period": 3600,
+        "stat": "Sum"
+      }
+    },
+    {
+      "type": "metric",
+      "x": 12,
+      "y": 16,
+      "width": 12,
+      "height": 6,
+      "properties": {
+        "metrics": [
+          [
+            "AWS/Events",
+            "FailedInvocations",
+            "RuleName",
+            "backup-param-trigger"
+          ],
+          ["...", "download-all-lambda-trigger"],
+          ["...", "monitor-lambda-trigger"],
+          ["...", "s3_access_reporting_Trigger"],
+          ["...", "backup-param-trigger"]
+        ],
+        "view": "timeSeries",
+        "stacked": false,
+        "region": "us-east-1",
+        "title": "Failed CloudWatch Event Invocations",
+        "period": 3600,
+        "yAxis": {
+          "left": {
+            "label": "Count",
+            "showUnits": false
+          }
+        },
+        "stat": "Sum"
+      }
+    },
+    {
+      "type": "metric",
+      "x": 12,
+      "y": 3,
+      "width": 12,
+      "height": 6,
+      "properties": {
+        "metrics": [
+          [
+            "AWS/Billing",
+            "EstimatedCharges",
+            "Currency",
+            "USD",
+            { "label": "Estimated Charges" }
+          ]
+        ],
+        "view": "timeSeries",
+        "stacked": false,
+        "region": "us-east-1",
+        "period": 86400,
+        "stat": "Maximum",
+        "title": "Estimated Billing Charges",
+        "yAxis": {
+          "left": {
+            "label": "Dollars",
+            "showUnits": false
+          }
+        }
+      }
+    },
+    {
+      "type": "metric",
+      "x": 12,
+      "y": 37,
+      "width": 12,
+      "height": 6,
+      "properties": {
+        "metrics": [
+          ["AWS/DynamoDB", "UserErrors", { "label": "User Errors" }],
+          [".", "SystemErrors", { "label": "System Errors" }]
+        ],
+        "view": "timeSeries",
+        "stacked": false,
+        "region": "us-east-1",
+        "stat": "Sum",
+        "period": 3600,
+        "title": "Terraform State Locking Table Errors"
+      }
+    },
+    {
+      "type": "text",
+      "x": 12,
+      "y": 36,
+      "width": 12,
+      "height": 1,
+      "properties": {
+        "markdown": "\n## Amazon DynamoDB\n"
+      }
+    },
+    {
+      "type": "metric",
+      "x": 0,
+      "y": 40,
+      "width": 12,
+      "height": 6,
+      "properties": {
+        "metrics": [
+          [
+            "AWS/S3",
+            "5xxErrors",
+            "BucketName",
+            "alsac-dev-dla-log",
+            "FilterId",
+            "EntireBucket",
+            { "label": "alsac-dev-dla-log 5xx Errors" }
+          ],
+          [
+            ".",
+            "4xxErrors",
+            ".",
+            ".",
+            ".",
+            ".",
+            { "label": "alsac-dev-dla-log 4xx Errors" }
+          ],
+          [
+            ".",
+            "5xxErrors",
+            ".",
+            "alsac-dev-dla-raw",
+            ".",
+            ".",
+            { "label": "alsac-dev-dla-raw 5xx Errors" }
+          ],
+          [
+            ".",
+            "4xxErrors",
+            ".",
+            ".",
+            ".",
+            ".",
+            { "label": "alsac-dev-dla-raw 4xx Errors" }
+          ],
+          [
+            "...",
+            "alsac-dev-dla-structured",
+            ".",
+            ".",
+            { "label": "alsac-dev-dla-structured 4xx Errors" }
+          ],
+          [
+            ".",
+            "5xxErrors",
+            ".",
+            ".",
+            ".",
+            ".",
+            { "label": "alsac-dev-dla-structured 5xx Errors" }
+          ]
+        ],
+        "view": "timeSeries",
+        "stacked": false,
+        "region": "us-east-1",
+        "title": "S3 Bucket Errors",
+        "period": 3600,
+        "stat": "Sum"
+      }
+    },
+    {
+      "type": "metric",
+      "x": 12,
+      "y": 30,
+      "width": 12,
+      "height": 6,
+      "properties": {
+        "metrics": [
+          [
+            "AWS/Athena",
+            "TotalExecutionTime",
+            "WorkGroup",
+            "datalake_team",
+            "QueryState",
+            "SUCCEEDED",
+            "QueryType",
+            "DDL",
+            { "label": "DDL Queries" }
+          ],
+          ["...", "DML", { "label": "DML Queries" }]
+        ],
+        "view": "timeSeries",
+        "stacked": false,
+        "region": "us-east-1",
+        "stat": "Average",
+        "period": 3600,
+        "title": "Athena Execution Time"
+      }
+    },
+    {
+      "type": "metric",
+      "x": 12,
+      "y": 10,
+      "width": 12,
+      "height": 6,
+      "properties": {
+        "metrics": [
+          ["AWS/Events", "Invocations", "RuleName", "backup-param-trigger"],
+          ["...", "download-all-lambda-trigger"],
+          ["...", "monitor-lambda-trigger"],
+          ["...", "s3-access-reporting-trigger"],
+          ["...", "backup-param-trigger"]
+        ],
+        "view": "timeSeries",
+        "stacked": false,
+        "region": "us-east-1",
+        "title": "CloudWatch Event Invocations",
+        "period": 3600,
+        "stat": "Sum"
+      }
+    },
+    {
+      "type": "text",
+      "x": 0,
+      "y": 21,
+      "width": 12,
+      "height": 1,
+      "properties": {
+        "markdown": "\n## Amazon Simple Storage Service (S3)\n"
+      }
+    },
+    {
+      "type": "metric",
+      "x": 0,
+      "y": 34,
+      "width": 12,
+      "height": 6,
+      "properties": {
+        "metrics": [
+          [
+            "AWS/S3",
+            "DeleteRequests",
+            "BucketName",
+            "alsac-dev-dla-log",
+            "FilterId",
+            "EntireBucket"
+          ],
+          ["...", "alsac-dev-dla-raw", ".", "."],
+          ["...", "alsac-dev-dla-structured", ".", "."]
+        ],
+        "view": "timeSeries",
+        "stacked": false,
+        "region": "us-east-1",
+        "period": 3600,
+        "title": "S3 Delete Requests",
+        "stat": "Sum"
+      }
+    },
+    {
+      "type": "metric",
+      "x": 0,
+      "y": 22,
+      "width": 12,
+      "height": 6,
+      "properties": {
+        "metrics": [
+          [
+            "AWS/S3",
+            "PutRequests",
+            "BucketName",
+            "alsac-dev-dla-log",
+            "FilterId",
+            "EntireBucket"
+          ],
+          ["...", "alsac-dev-dla-raw", ".", "."],
+          ["...", "alsac-dev-dla-structured", ".", "."]
+        ],
+        "view": "timeSeries",
+        "stacked": false,
+        "region": "us-east-1",
+        "period": 3600,
+        "title": "S3 Put Requests",
+        "stat": "Sum"
+      }
+    },
+    {
+      "type": "metric",
+      "x": 0,
+      "y": 28,
+      "width": 12,
+      "height": 6,
+      "properties": {
+        "metrics": [
+          [
+            "AWS/S3",
+            "GetRequests",
+            "BucketName",
+            "alsac-dev-dla-log",
+            "FilterId",
+            "EntireBucket"
+          ],
+          ["...", "alsac-dev-dla-raw", ".", "."],
+          ["...", "alsac-dev-dla-structured", ".", "."]
+        ],
+        "view": "timeSeries",
+        "stacked": false,
+        "region": "us-east-1",
+        "period": 3600,
+        "title": "S3 Get Requests",
+        "stat": "Sum"
+      }
+    }
+  ]
+}

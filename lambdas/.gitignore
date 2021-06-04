@@ -1,0 +1,21 @@
+# Python
+/venv/
+/src/__pycache__/
+
+# Eclipse
+.project
+.pydevproject
+
+# Parameters Store
+/resources/parameters/
+
+# Downloads
+/resources/downloads/
+
+# Deployment package
+/deployment-package-*.zip
+
+
+.terraform
+*_cache
+.coverage

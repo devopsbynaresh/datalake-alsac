@@ -1,0 +1,847 @@
+{
+    "rules": [
+        {
+            "rule-type": "selection",
+            "rule-id": "1",
+            "rule-name": "1",
+            "object-locator": {
+                "schema-name": "DMS",
+                "table-name": "USR_CREDITCARD"
+            },
+            "rule-action": "include",
+            "filters": []
+        },
+        {
+            "rule-type": "transformation",
+            "rule-id": "2",
+            "rule-name": "2",
+            "rule-target": "column",
+            "object-locator": {
+                "schema-name": "DMS",
+                "table-name": "USR_CREDITCARD",
+                "column-name": "CHARGE_CARD_ALIAS"
+            },
+            "rule-action": "remove-column",
+            "value": null,
+            "old-value": null
+        },
+        {
+            "rule-type": "selection",
+            "rule-id": "3",
+            "rule-name": "3",
+            "object-locator": {
+                "schema-name": "DMS",
+                "table-name": "INSTALLMENTSPLITPAYMENT"
+            },
+            "rule-action": "include",
+            "filters": []
+        },
+        {
+            "rule-type": "selection",
+            "rule-id": "4",
+            "rule-name": "4",
+            "object-locator": {
+                "schema-name": "DMS",
+                "table-name": "PLEDGEORIGINALAMOUNT"
+            },
+            "rule-action": "include",
+            "filters": []
+        },
+        {
+            "rule-type": "selection",
+            "rule-id": "5",
+            "rule-name": "5",
+            "object-locator": {
+                "schema-name": "DMS",
+                "table-name": "INSTALLMENTSPLIT"
+            },
+            "rule-action": "include",
+            "filters": []
+        },
+        {
+            "rule-type": "selection",
+            "rule-id": "6",
+            "rule-name": "6",
+            "object-locator": {
+                "schema-name": "DMS",
+                "table-name": "USR_DIRECTDEBITPAYMENTMETHODDETAIL"
+            },
+            "rule-action": "include",
+            "filters": []
+        },
+        {
+            "rule-type": "selection",
+            "rule-id": "7",
+            "rule-name": "7",
+            "object-locator": {
+                "schema-name": "DMS",
+                "table-name": "DIRECTDEBITPAYMENTMETHODDETAIL"
+            },
+            "rule-action": "include",
+            "filters": []
+        },
+        {
+            "rule-type": "selection",
+            "rule-id": "8",
+            "rule-name": "8",
+            "object-locator": {
+                "schema-name": "MDM",
+                "table-name": "ORGANIZATION"
+            },
+            "rule-action": "include",
+            "filters": []
+        },
+        {
+            "rule-type": "transformation",
+            "rule-id": "9",
+            "rule-name": "9",
+            "rule-target": "column",
+            "object-locator": {
+                "schema-name": "MDM",
+                "table-name": "ORGANIZATION",
+                "column-name": "name"
+            },
+            "rule-action": "remove-column",
+            "value": null,
+            "old-value": null
+        },
+        {
+            "rule-type": "transformation",
+            "rule-id": "10",
+            "rule-name": "10",
+            "rule-target": "column",
+            "object-locator": {
+                "schema-name": "MDM",
+                "table-name": "ORGANIZATION",
+                "column-name": "num_employees"
+            },
+            "rule-action": "remove-column",
+            "value": null,
+            "old-value": null
+        },
+        {
+            "rule-type": "transformation",
+            "rule-id": "11",
+            "rule-name": "11",
+            "rule-target": "column",
+            "object-locator": {
+                "schema-name": "MDM",
+                "table-name": "ORGANIZATION",
+                "column-name": "num_subsidiaries"
+            },
+            "rule-action": "remove-column",
+            "value": null,
+            "old-value": null
+        },
+        {
+            "rule-type": "transformation",
+            "rule-id": "12",
+            "rule-name": "12",
+            "rule-target": "column",
+            "object-locator": {
+                "schema-name": "MDM",
+                "table-name": "ORGANIZATION",
+                "column-name": "revenue"
+            },
+            "rule-action": "remove-column",
+            "value": null,
+            "old-value": null
+        },
+        {
+            "rule-type": "selection",
+            "rule-id": "13",
+            "rule-name": "13",
+            "object-locator": {
+                "schema-name": "DMS",
+                "table-name": "REGISTRANT"
+            },
+            "rule-action": "include",
+            "filters": []
+        },
+        {
+            "rule-type": "selection",
+            "rule-id": "14",
+            "rule-name": "14",
+            "object-locator": {
+                "schema-name": "DMS",
+                "table-name": "USR_INTERACTIONSOURCETYPECODE"
+            },
+            "rule-action": "include",
+            "filters": []
+        },
+        {
+            "rule-type": "selection",
+            "rule-id": "15",
+            "rule-name": "15",
+            "object-locator": {
+                "schema-name": "DMS",
+                "table-name": "OTHERPAYMENTMETHODDETAIL"
+            },
+            "rule-action": "include",
+            "filters": []
+        },
+        {
+            "rule-type": "selection",
+            "rule-id": "16",
+            "rule-name": "16",
+            "object-locator": {
+                "schema-name": "Attribution",
+                "table-name": "Sources"
+            },
+            "rule-action": "include",
+            "filters": []
+        },
+        {
+            "rule-type": "selection",
+            "rule-id": "17",
+            "rule-name": "17",
+            "object-locator": {
+                "schema-name": "PFP",
+                "table-name": "PfpOrder"
+            },
+            "rule-action": "include",
+            "filters": []
+        },
+        {
+            "rule-type": "selection",
+            "rule-id": "18",
+            "rule-name": "18",
+            "object-locator": {
+                "schema-name": "EVENTMASTER",
+                "table-name": "EventMasters"
+            },
+            "rule-action": "include",
+            "filters": []
+        },
+        {
+            "rule-type": "transformation",
+            "rule-id": "19",
+            "rule-name": "19",
+            "rule-target": "column",
+            "object-locator": {
+                "schema-name": "EVENTMASTER",
+                "table-name": "EventMasters",
+                "column-name": "ContactAddress"
+            },
+            "rule-action": "remove-column",
+            "value": null,
+            "old-value": null
+        },
+        {
+            "rule-type": "transformation",
+            "rule-id": "20",
+            "rule-name": "20",
+            "rule-target": "column",
+            "object-locator": {
+                "schema-name": "EVENTMASTER",
+                "table-name": "EventMasters",
+                "column-name": "ContactAddress2"
+            },
+            "rule-action": "remove-column",
+            "value": null,
+            "old-value": null
+        },
+        {
+            "rule-type": "transformation",
+            "rule-id": "21",
+            "rule-name": "21",
+            "rule-target": "column",
+            "object-locator": {
+                "schema-name": "EVENTMASTER",
+                "table-name": "EventMasters",
+                "column-name": "ContactEmail"
+            },
+            "rule-action": "remove-column",
+            "value": null,
+            "old-value": null
+        },
+        {
+            "rule-type": "transformation",
+            "rule-id": "22",
+            "rule-name": "22",
+            "rule-target": "column",
+            "object-locator": {
+                "schema-name": "EVENTMASTER",
+                "table-name": "EventMasters",
+                "column-name": "ContactPhone"
+            },
+            "rule-action": "remove-column",
+            "value": null,
+            "old-value": null
+        },
+        {
+            "rule-type": "transformation",
+            "rule-id": "23",
+            "rule-name": "23",
+            "rule-target": "column",
+            "object-locator": {
+                "schema-name": "EVENTMASTER",
+                "table-name": "EventMasters",
+                "column-name": "LeadStaffEmail"
+            },
+            "rule-action": "remove-column",
+            "value": null,
+            "old-value": null
+        },
+        {
+            "rule-type": "transformation",
+            "rule-id": "24",
+            "rule-name": "24",
+            "rule-target": "column",
+            "object-locator": {
+                "schema-name": "EVENTMASTER",
+                "table-name": "EventMasters",
+                "column-name": "ShipToAddress"
+            },
+            "rule-action": "remove-column",
+            "value": null,
+            "old-value": null
+        },
+        {
+            "rule-type": "transformation",
+            "rule-id": "25",
+            "rule-name": "25",
+            "rule-target": "column",
+            "object-locator": {
+                "schema-name": "EVENTMASTER",
+                "table-name": "EventMasters",
+                "column-name": "ShipToAddress2"
+            },
+            "rule-action": "remove-column",
+            "value": null,
+            "old-value": null
+        },
+        {
+            "rule-type": "transformation",
+            "rule-id": "26",
+            "rule-name": "26",
+            "rule-target": "column",
+            "object-locator": {
+                "schema-name": "EVENTMASTER",
+                "table-name": "EventMasters",
+                "column-name": "StaffAddress"
+            },
+            "rule-action": "remove-column",
+            "value": null,
+            "old-value": null
+        },
+        {
+            "rule-type": "transformation",
+            "rule-id": "27",
+            "rule-name": "27",
+            "rule-target": "column",
+            "object-locator": {
+                "schema-name": "EVENTMASTER",
+                "table-name": "EventMasters",
+                "column-name": "StaffPhone"
+            },
+            "rule-action": "remove-column",
+            "value": null,
+            "old-value": null
+        },
+        {
+            "rule-type": "transformation",
+            "rule-id": "28",
+            "rule-name": "28",
+            "rule-target": "column",
+            "object-locator": {
+                "schema-name": "EVENTMASTER",
+                "table-name": "EventMasters",
+                "column-name": "StaffUserId"
+            },
+            "rule-action": "remove-column",
+            "value": null,
+            "old-value": null
+        },
+        {
+            "rule-type": "selection",
+            "rule-id": "29",
+            "rule-name": "29",
+            "object-locator": {
+                "schema-name": "FUSION",
+                "table-name": "GL_CODE_COMBINATIONS"
+            },
+            "rule-action": "include",
+            "filters": []
+        },
+        {
+            "rule-type": "selection",
+            "rule-id": "30",
+            "rule-name": "30",
+            "object-locator": {
+                "schema-name": "Attribution",
+                "table-name": "Efforts"
+            },
+            "rule-action": "include",
+            "filters": []
+        },
+        {
+            "rule-type": "selection",
+            "rule-id": "31",
+            "rule-name": "31",
+            "object-locator": {
+                "schema-name": "FUSION",
+                "table-name": "FND_VS_VALUES_B"
+            },
+            "rule-action": "include",
+            "filters": []
+        },
+        {
+            "rule-type": "selection",
+            "rule-id": "32",
+            "rule-name": "32",
+            "object-locator": {
+                "schema-name": "Attribution",
+                "table-name": "Initiatives"
+            },
+            "rule-action": "include",
+            "filters": []
+        },
+        {
+            "rule-type": "selection",
+            "rule-id": "33",
+            "rule-name": "33",
+            "object-locator": {
+                "schema-name": "Fusion",
+                "table-name": "FND_VS_VALUES_TL"
+            },
+            "rule-action": "include",
+            "filters": []
+        },
+        {
+            "rule-type": "selection",
+            "rule-id": "34",
+            "rule-name": "34",
+            "object-locator": {
+                "schema-name": "DMS",
+                "table-name": "GIFTINKINDPAYMENTMETHODDETAIL"
+            },
+            "rule-action": "include",
+            "filters": []
+        },
+        {
+            "rule-type": "selection",
+            "rule-id": "35",
+            "rule-name": "35",
+            "object-locator": {
+                "schema-name": "MDM",
+                "table-name": "ALSAC_MARKET_REGIONS"
+            },
+            "rule-action": "include",
+            "filters": []
+        },
+        {
+            "rule-type": "selection",
+            "rule-id": "36",
+            "rule-name": "36",
+            "object-locator": {
+                "schema-name": "DMS",
+                "table-name": "STATE"
+            },
+            "rule-action": "include",
+            "filters": []
+        },
+        {
+            "rule-type": "selection",
+            "rule-id": "37",
+            "rule-name": "37",
+            "object-locator": {
+                "schema-name": "MDM",
+                "table-name": "STATE"
+            },
+            "rule-action": "include",
+            "filters": []
+        },
+        {
+            "rule-type": "selection",
+            "rule-id": "38",
+            "rule-name": "38",
+            "object-locator": {
+                "schema-name": "DMS",
+                "table-name": "USR_GPSTAFFZIP"
+            },
+            "rule-action": "include",
+            "filters": []
+        },
+        {
+            "rule-type": "selection",
+            "rule-id": "39",
+            "rule-name": "39",
+            "object-locator": {
+                "schema-name": "DMS",
+                "table-name": "USR_GPSTAFFZIP"
+            },
+            "rule-action": "include",
+            "filters": []
+        },
+        {
+            "rule-type": "selection",
+            "rule-id": "40",
+            "rule-name": "40",
+            "object-locator": {
+                "schema-name": "BIETL",
+                "table-name": "EVMOrderedEventsDW"
+            },
+            "rule-action": "include",
+            "filters": []
+        },
+        {
+            "rule-type": "selection",
+            "rule-id": "41",
+            "rule-name": "41",
+            "object-locator": {
+                "schema-name": "DMS",
+                "table-name": "INTERACTIONTYPECODE"
+            },
+            "rule-action": "include",
+            "filters": []
+        },
+        {
+            "rule-type": "selection",
+            "rule-id": "42",
+            "rule-name": "42",
+            "object-locator": {
+                "schema-name": "Attribution",
+                "table-name": "Campaigns"
+            },
+            "rule-action": "include",
+            "filters": []
+        },
+        {
+            "rule-type": "selection",
+            "rule-id": "43",
+            "rule-name": "43",
+            "object-locator": {
+                "schema-name": "BITEL",
+                "table-name": "cleanup_financialtransaction"
+            },
+            "rule-action": "include",
+            "filters": []
+        },
+        {
+            "rule-type": "selection",
+            "rule-id": "44",
+            "rule-name": "44",
+            "object-locator": {
+                "schema-name": "DMS",
+                "table-name": "USR_PROJECT"
+            },
+            "rule-action": "include",
+            "filters": []
+        },
+        {
+            "rule-type": "selection",
+            "rule-id": "45",
+            "rule-name": "45",
+            "object-locator": {
+                "schema-name": "EVENTMASTER",
+                "table-name": "States"
+            },
+            "rule-action": "include",
+            "filters": []
+        },
+        {
+            "rule-type": "selection",
+            "rule-id": "46",
+            "rule-name": "46",
+            "object-locator": {
+                "schema-name": "EVENTMASTER",
+                "table-name": "EventTypes"
+            },
+            "rule-action": "include",
+            "filters": []
+        },
+        {
+            "rule-type": "selection",
+            "rule-id": "47",
+            "rule-name": "47",
+            "object-locator": {
+                "schema-name": "MDM",
+                "table-name": "CONSTITUENT_TITLE"
+            },
+            "rule-action": "include",
+            "filters": []
+        },
+        {
+            "rule-type": "transformation",
+            "rule-id": "48",
+            "rule-name": "48",
+            "rule-target": "column",
+            "object-locator": {
+                "schema-name": "MDM",
+                "table-name": "CONSTITUENT_TITLE",
+                "column-name": "Description"
+            },
+            "rule-action": "remove-column",
+            "value": null,
+            "old-value": null
+        },
+        {
+            "rule-type": "transformation",
+            "rule-id": "49",
+            "rule-name": "49",
+            "rule-target": "column",
+            "object-locator": {
+                "schema-name": "MDM",
+                "table-name": "CONSTITUENT_TITLE",
+                "column-name": "Gender"
+            },
+            "rule-action": "remove-column",
+            "value": null,
+            "old-value": null
+        },
+        {
+            "rule-type": "selection",
+            "rule-id": "50",
+            "rule-name": "50",
+            "object-locator": {
+                "schema-name": "MDM",
+                "table-name": "COUNTRY"
+            },
+            "rule-action": "include",
+            "filters": []
+        },
+        {
+            "rule-type": "selection",
+            "rule-id": "51",
+            "rule-name": "51",
+            "object-locator": {
+                "schema-name": "Attribution",
+                "table-name": "Activities"
+            },
+            "rule-action": "include",
+            "filters": []
+        },
+        {
+            "rule-type": "selection",
+            "rule-id": "52",
+            "rule-name": "52",
+            "object-locator": {
+                "schema-name": "DMS",
+                "table-name": "USR_GPSTAFFTYPE"
+            },
+            "rule-action": "include",
+            "filters": []
+        },
+        {
+            "rule-type": "selection",
+            "rule-id": "53",
+            "rule-name": "53",
+            "object-locator": {
+                "schema-name": "EVENTMASTER",
+                "table-name": "CostCenter"
+            },
+            "rule-action": "include",
+            "filters": []
+        },
+        {
+            "rule-type": "selection",
+            "rule-id": "54",
+            "rule-name": "54",
+            "object-locator": {
+                "schema-name": "EVENTMASTER",
+                "table-name": "EventPrograms"
+            },
+            "rule-action": "include",
+            "filters": []
+        },
+        {
+            "rule-type": "selection",
+            "rule-id": "55",
+            "rule-name": "55",
+            "object-locator": {
+                "schema-name": "EVENTMASTER",
+                "table-name": "Region"
+            },
+            "rule-action": "include",
+            "filters": []
+        },
+        {
+            "rule-type": "selection",
+            "rule-id": "56",
+            "rule-name": "56",
+            "object-locator": {
+                "schema-name": "EVENTMASTER",
+                "table-name": "Statuses"
+            },
+            "rule-action": "include",
+            "filters": []
+        },
+        {
+            "rule-type": "selection",
+            "rule-id": "57",
+            "rule-name": "57",
+            "object-locator": {
+                "schema-name": "EVM_XREF",
+                "table-name": "EventTypes"
+            },
+            "rule-action": "include",
+            "filters": []
+        },
+        {
+            "rule-type": "selection",
+            "rule-id": "58",
+            "rule-name": "58",
+            "object-locator": {
+                "schema-name": "MDM",
+                "table-name": "ADDRESS_TYPE"
+            },
+            "rule-action": "include",
+            "filters": []
+        },
+        {
+            "rule-type": "selection",
+            "rule-id": "59",
+            "rule-name": "59",
+            "object-locator": {
+                "schema-name": "MDM",
+                "table-name": "ALSAC_COST_CENTERS"
+            },
+            "rule-action": "include",
+            "filters": []
+        },
+        {
+            "rule-type": "selection",
+            "rule-id": "60",
+            "rule-name": "60",
+            "object-locator": {
+                "schema-name": "MDM",
+                "table-name": "Channel"
+            },
+            "rule-action": "include",
+            "filters": []
+        },
+        {
+            "rule-type": "selection",
+            "rule-id": "61",
+            "rule-name": "61",
+            "object-locator": {
+                "schema-name": "MDM",
+                "table-name": "CONSTITUENT_SUFFIX"
+            },
+            "rule-action": "include",
+            "filters": []
+        },
+        {
+            "rule-type": "selection",
+            "rule-id": "62",
+            "rule-name": "62",
+            "object-locator": {
+                "schema-name": "MDM",
+                "table-name": "CONSTITUENT_TYPE"
+            },
+            "rule-action": "include",
+            "filters": []
+        },
+        {
+            "rule-type": "selection",
+            "rule-id": "63",
+            "rule-name": "63",
+            "object-locator": {
+                "schema-name": "MDM",
+                "table-name": "MARITAL_STATUS"
+            },
+            "rule-action": "include",
+            "filters": []
+        },
+        {
+            "rule-type": "selection",
+            "rule-id": "64",
+            "rule-name": "64",
+            "object-locator": {
+                "schema-name": "MDM",
+                "table-name": "SALUTATION"
+            },
+            "rule-action": "include",
+            "filters": []
+        },
+        {
+            "rule-type": "selection",
+            "rule-id": "65",
+            "rule-name": "65",
+            "object-locator": {
+                "schema-name": "MDM",
+                "table-name": "STATUS"
+            },
+            "rule-action": "include",
+            "filters": []
+        },
+        {
+            "rule-type": "selection",
+            "rule-id": "66",
+            "rule-name": "66",
+            "object-locator": {
+                "schema-name": "Attribution",
+                "table-name": "Fund"
+            },
+            "rule-action": "include",
+            "filters": []
+        },
+        {
+            "rule-type": "selection",
+            "rule-id": "67",
+            "rule-name": "67",
+            "object-locator": {
+                "schema-name": "Attribution",
+                "table-name": "Fund_type"
+            },
+            "rule-action": "include",
+            "filters": []
+        },
+        {
+            "rule-type": "selection",
+            "rule-id": "68",
+            "rule-name": "68",
+            "object-locator": {
+                "schema-name": "BIETL",
+                "table-name": "PaymentsNotInTA_Static"
+            },
+            "rule-action": "include",
+            "filters": []
+        },
+        {
+            "rule-type": "selection",
+            "rule-id": "69",
+            "rule-name": "69",
+            "object-locator": {
+                "schema-name": "PFP",
+                "table-name": "ProductDedication"
+            },
+            "rule-action": "include",
+            "filters": []
+        },
+        {
+            "rule-type": "selection",
+            "rule-id": "70",
+            "rule-name": "70",
+            "object-locator": {
+                "schema-name": "STATICDATA",
+                "table-name": "fips_county_to_cbsa_map_2013"
+            },
+            "rule-action": "include",
+            "filters": []
+        },
+        {
+            "rule-type": "selection",
+            "rule-id": "71",
+            "rule-name": "71",
+            "object-locator": {
+                "schema-name": "STATICDATA",
+                "table-name": "FIPS_COUNTY_TO_CBSA_MAP_2017"
+            },
+            "rule-action": "include",
+            "filters": []
+        },
+        {
+            "rule-type": "selection",
+            "rule-id": "72",
+            "rule-name": "72",
+            "object-locator": {
+                "schema-name": "STATICDATA",
+                "table-name": "visual_zip_centers"
+            },
+            "rule-action": "include",
+            "filters": []
+        }
+    ]
+}
